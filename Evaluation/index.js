@@ -274,6 +274,7 @@ app.post("/user/login", (req, res, next ) => {
       ]
       res.send(JSON.stringify(voters))
   })
-app.listen(8080, ()=>{
+  const PORT = process.env.PORT || 8080
+app.listen(PORT, ()=>{
     console.log("Server started on http://localhost:8080")
 }) 
